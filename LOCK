@@ -1,3 +1,4 @@
+-- kals lock (skidded) 
 -- keybind Q
 
     Settings = {
@@ -11,7 +12,7 @@
         FOV = math.huge,
         RESOVLER = true,
         Tracer = true,
-        TracerColor = Color3.new(229, 204, 255),
+        TracerColor = Color3.new(0, 255, 238),
         TracerTransparency = 0.75,
         TracerThickness = 5,
         Circles = false,
@@ -144,7 +145,7 @@
         placemarker.Transparency = 1
         end
         if Settings.Kalslock.showdot then
-        makemarker(placemarker, placemarker, Color3.fromRGB(229, 204, 255), 0.80, 0)
+        makemarker(placemarker, placemarker, Color3.fromRGB(0, 255, 238), 0.80, 0)
         end
     end)
  
@@ -155,9 +156,9 @@
                 if Settings.Kalslock.notifaction == true then
                     Plr = getClosestPlayerToCursor()
                 game.StarterGui:SetCore("SendNotification", {
-                    Title = "b1";
-                    Text = "Unlocked",
-                    Icon = "http://www.roblox.com/asset/?id=5246845109",
+                    Title = "Kal Skidded This";
+                    Text = "  Unlocked",
+                    Icon = "http://www.roblox.com/asset/?id=5314810647",
                     Duration = 3
                 })
             end
@@ -167,9 +168,9 @@
                 if Settings.Kalslock.notifaction == true then
  
                     game.StarterGui:SetCore("SendNotification", {
-                        Title = "b1";
-                        Text = "Locked on to: "..tostring(Plr.Character.Humanoid.DisplayName),
-                        Icon = "http://www.roblox.com/asset/?id=5246845109",
+                        Title = "Kal Skidded This";
+                        Text = "  Target: "..tostring(Plr.Character.Humanoid.DisplayName),
+                        Icon = "http://www.roblox.com/asset/?id=8709610734",
                         Duration = 3
                     })
  
