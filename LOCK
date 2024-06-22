@@ -155,9 +155,9 @@
                 if Settings.Kalslock.notifaction == true then
                     Plr = getClosestPlayerToCursor()
                 game.StarterGui:SetCore("SendNotification", {
-                    Title = "!";
-                    Text = "  Unlocked",
-                    Icon = "http://www.roblox.com/asset/?id=3771267813",
+                    Title = "b1";
+                    Text = "Unlocked",
+                    Icon = "http://www.roblox.com/asset/?id=5246845109",
                     Duration = 3
                 })
             end
@@ -167,9 +167,9 @@
                 if Settings.Kalslock.notifaction == true then
  
                     game.StarterGui:SetCore("SendNotification", {
-                        Title = "!";
-                        Text = "  Locked on to: "..tostring(Plr.Character.Humanoid.DisplayName),
-                        Icon = "http://www.roblox.com/asset/?id=3771267813",
+                        Title = "b1";
+                        Text = "Locked on to: "..tostring(Plr.Character.Humanoid.DisplayName),
+                        Icon = "http://www.roblox.com/asset/?id=5246845109",
                         Duration = 3
                     })
  
