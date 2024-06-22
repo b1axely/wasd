@@ -1,4 +1,3 @@
--- kals lock (skidded) 
 -- keybind Q
 
     Settings = {
@@ -12,19 +11,19 @@
         FOV = math.huge,
         RESOVLER = true,
         Tracer = true,
-        TracerColor = Color3.new(81, 0, 255),
+        TracerColor = Color3.new(0, 255, 238),
         TracerTransparency = 0.75,
         TracerThickness = 5,
         Circles = false,
         CircleFOV = 500,
-        CircleColor = Color3.new(81, 0, 255),
+        CircleColor = Color3.new(255, 255, 255),
         CircleThickness = 2,
         CircleFilled = true,
         CircleTransparency = 0.10,
         CircleTransparencyOutline = 0,
-        OutlineColor = Color3.new(81, 0, 255),
+        OutlineColor = Color3.new(255, 255, 255),
         Texts = false, 
-        TextColor = Color3.new(81, 0, 255),
+        TextColor = Color3.new(255, 255, 255),
         TextSize = 35,
         TextInput = "skidded",
         Hitbox = true,
@@ -72,7 +71,7 @@
                           local placemarker = Instance.new("Part", game.Workspace)
                           placemarker.Shape = _G.Types.Ball
                           placemarker.Material = "ForceField"
-                          placemarker.Color = Color3.new(81, 0, 255)
+                          placemarker.Color = Color3.new(0, 1, 1)
  
     function makemarker(Parent, Adornee, Color, Size, Size2)
         local e = Instance.new("BillboardGui", Parent)
@@ -108,7 +107,7 @@
     function noob(player)
         local character
         repeat wait() until player.Character
-        local handler = makemarker(guimain, player.Character:WaitForChild(SelectedPart), Color3.fromRGB(81, 0, 255), 0.3, 3)
+        local handler = makemarker(guimain, player.Character:WaitForChild(SelectedPart), Color3.fromRGB(0, 255, 229), 0.3, 3)
         handler.Name = player.Name
         player.CharacterAdded:connect(function(Char) handler.Adornee = Char:WaitForChild(SelectedPart) end)
  
@@ -145,7 +144,7 @@
         placemarker.Transparency = 1
         end
         if Settings.Kalslock.showdot then
-        makemarker(placemarker, placemarker, Color3.fromRGB(81, 0, 255), 0.80, 0)
+        makemarker(placemarker, placemarker, Color3.fromRGB(0, 255, 238), 0.80, 0)
         end
     end)
  
@@ -156,8 +155,8 @@
                 if Settings.Kalslock.notifaction == true then
                     Plr = getClosestPlayerToCursor()
                 game.StarterGui:SetCore("SendNotification", {
-                    Title = " ";
-                    Text = "  Not locked on",
+                    Title = "!";
+                    Text = "  Unlocked",
                     Icon = "http://www.roblox.com/asset/?id=3771267813",
                     Duration = 3
                 })
@@ -168,7 +167,7 @@
                 if Settings.Kalslock.notifaction == true then
  
                     game.StarterGui:SetCore("SendNotification", {
-                        Title = " ";
+                        Title = "!";
                         Text = "  Locked on to: "..tostring(Plr.Character.Humanoid.DisplayName),
                         Icon = "http://www.roblox.com/asset/?id=3771267813",
                         Duration = 3
